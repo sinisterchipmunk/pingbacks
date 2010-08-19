@@ -17,6 +17,7 @@ begin
     gem.homepage = "http://github.com/sinisterchipmunk/pingbacks"
     gem.authors = ["Colin MacKenzie IV"]
     gem.add_development_dependency "rspec", ">= 2.0.0.beta"
+    gem.add_development_dependency 'genspec', '>= 0.2.0.prerails3.2'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
