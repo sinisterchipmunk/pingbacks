@@ -1,9 +1,10 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'pingbacks'
-require 'spec'
-require 'spec/autorun'
+ENV['RAILS_ENV'] ||= "test"
+require File.expand_path(File.join(File.dirname(__FILE__),
+                      "../spec_env/rails3/config/environment.rb"))
 
-Spec::Runner.configure do |config|
-  
+Dir[File.join(File.dirname(__FILE__), "support/**/*.rb")].each { |f| require f }
+
+RSpec.configure do |config|
+
 end
+
